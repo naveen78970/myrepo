@@ -3,7 +3,7 @@ locals  {
 }
 resource "aws_instance" "web" {
     ami = "ami-0521cb2d60cfbb1a6"
-    instance_type = var.instance_type
+    instance_type = "t3.micro"
     key_name = "naveen150vpc"
     tags = {
         Name = local.instance_name
